@@ -20,7 +20,7 @@ export const App = () => {
 
     if (
       contacts.find(
-        contact => contact.name === name && contact.number === number
+        contact => contact.name === name || contact.number === number
       )
     ) {
       alert(`${name} is already in contacts.`);
