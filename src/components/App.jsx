@@ -16,11 +16,11 @@ export const App = () => {
   }, [contacts]);
 
   const handleAddContact = data => {
-    const { name, number } = data;
+    const { name } = data;
 
     if (
       contacts.find(
-        contact => contact.name === name || contact.number === number
+        contact => contact.name === name
       )
     ) {
       alert(`${name} is already in contacts.`);
